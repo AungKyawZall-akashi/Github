@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .text{
+            color: red;
+            background-color: black;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav_a{
+            display: block;
+        }
+        .bar{
+            display: none;
+        }
+        .three_images{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width:500px) {
+            .text{
+                color: blue;
+                background-color: yellow;
+            }
+            .bar{
+                display: block;
+            }
+            .nav_a{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+         <h1>Logo</h1>
+        </div>
+        <div class="nav_a">
+            <a href="#">Home</a>
+              <a href="#">Home</a>
+                <a href="#">Home</a>
+                  <a href="#">Home</a>
+        </div>
+        <div class="bar">
+            <img src="burger-menu.svg" alt="" width="20px" height="20px">
+        </div>
+    </div>
+    <div class="three_images">
+            <img src="burger-menu.svg" alt="" width="200px" height="200px">
+            <img src="burger-menu.svg" alt="" width="200px" height="200px">
+            <img src="burger-menu.svg" alt="" width="200px" height="200px">
+
+    </div>
+</body>
+</html>
